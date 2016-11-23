@@ -3,9 +3,10 @@
  */
 public class Ex5 {
     public static void main(String[] args) {
-        System.out.println("Ім'я:\t\t\t\tЮлія");
-        System.out.println("Прізвище:\t\t\tАнтонова");
-        System.out.println("Номер телефону:\t\t0974858241");
-        System.out.println("Місце навчання:\t\tЧДТУ");
+        String template = "%-20s: %s\n";
+        System.out.printf(template, "Ім'я" , "Юлія");
+        System.out.printf(template, "Прізвище" , "Антонова");
+        System.out.printf(template, "Номер телефону" , "0974858241");
+        System.out.printf(template, "Місце навчання" , "ЧДТУ");
     }
 }
